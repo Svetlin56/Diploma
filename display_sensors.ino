@@ -26,8 +26,11 @@ void readSensors() {
 }
 
 void updateDisplay() {
-  lv_label_set_text_fmt(tempLabel, "Temp: %.1f C", temperature);
-  lv_label_set_text_fmt(humLabel, "Humidity: %.1f %%", humidity);
+  String tempText = "Temp: " + String(temperature, 1) + " C";
+  String humText = "Humidity: " + String(humidity, 1) + " %";
+
+  lv_label_set_text(tempLabel, tempText.c_str());
+  lv_label_set_text(humLabel, humText.c_str());
   lv_label_set_text_fmt(soilLabel, "Soil: %d", soilMoisture);
   lv_label_set_text_fmt(lightLabel, "Light: %d", lightLevel);
 }
