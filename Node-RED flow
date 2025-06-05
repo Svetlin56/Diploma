@@ -16,7 +16,8 @@
         "y": 260,
         "wires": [
             [
-                "parse_data"
+                "parse_data",
+                "3796ec3559d64049"
             ]
         ]
     },
@@ -504,6 +505,27 @@
         ]
     },
     {
+        "id": "3796ec3559d64049",
+        "type": "ui_template",
+        "z": "mongo-read-flow",
+        "group": "f16ba98592a3df13",
+        "name": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<a href=\"https://studio.edgeimpulse.com/studio/686409/impulse/2/classification\" target=\"_blank\" style=\"text-decoration: none;\">\n  <md-button style=\"width:100%; font-weight:bold;\">\n    Go to Edge Impulse\n  </md-button>\n</a>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 300,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "arduino_port",
         "type": "serial-port",
         "name": "",
@@ -568,6 +590,17 @@
         "name": "Light Level",
         "tab": "286006618d1620f3",
         "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f16ba98592a3df13",
+        "type": "ui_group",
+        "name": "Test AI model",
+        "tab": "286006618d1620f3",
+        "order": 5,
         "disp": true,
         "width": 6,
         "collapse": false,
